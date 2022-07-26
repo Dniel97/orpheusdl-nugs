@@ -96,6 +96,8 @@ loaded module. You'll find the configuration file here: `config/settings.json`
 | proprietary_codecs | Enables/Disables MQA downloading regardless the "hifi" setting from `download_quality` |
 | spatial_codecs     | Enables/Disables downloading of Sony 360RA                                             |
 
+**Note: `spatial_codecs` will overwrite your `download_quality` setting and will always get Sony 360RA if available.** 
+
 ### nugs
 ```json
 {
@@ -106,12 +108,12 @@ loaded module. You'll find the configuration file here: `config/settings.json`
 }
 ```
 
-| Option    | Info                                                   |
-|-----------|--------------------------------------------------------|
-| username  | Enter your nugs email address                          |
-| password  | Enter your nugs password                               |
-| client_id | Enter a valid android client_id from api.aspx          |
-| dev_key   | Enter a valid android developerKey from secureApi.aspx |
+| Option    | Info                                                    |
+|-----------|---------------------------------------------------------|
+| username  | Enter your nugs email address                           |
+| password  | Enter your nugs password                                |
+| client_id | Enter a valid android client_id from /connect/authorize |
+| dev_key   | Enter a valid android developerKey from secureApi.aspx  |
 
 **Credits: [MQA_identifier](https://github.com/purpl3F0x/MQA_identifier) by
 [@purpl3F0x](https://github.com/purpl3F0x) and [mqaid](https://github.com/redsudo/mqaid) by
