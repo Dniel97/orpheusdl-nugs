@@ -314,7 +314,7 @@ class NugsMobileSession(NugsSession):
 
     def auth_headers(self, use_access_token: bool = True) -> dict:
         return {
-            'User-Agent': 'NugsNet/3.16.1.682 (Android; 11; Xiaomi; Mi 9T Pro)',
+            'User-Agent': 'NugsNet/3.16.1.682 (Android; 12; Google; Pixel 6)',
             'Authorization': f'Bearer {self.access_token}' if use_access_token else None,
             'Connection': 'Keep-Alive',
             'Accept-Encoding': 'gzip'
